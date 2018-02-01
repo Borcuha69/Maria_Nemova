@@ -10,3 +10,13 @@ class Section2Admin(admin.ModelAdmin):
 
 
 admin.site.register(Section2, Section2Admin)
+
+
+class SubscriberAdmin(admin.ModelAdmin):
+    list_display = [field.name for field in Subscriber._meta.fields]
+
+    class Meta:
+        model = Subscriber
+
+
+admin.site.register(Subscriber, SubscriberAdmin)

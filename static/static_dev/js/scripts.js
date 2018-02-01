@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    $('.start').delay(2000).fadeIn(2000);
+    $('.start').delay(1000).fadeIn(5000);
 });

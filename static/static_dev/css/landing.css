@@ -2,6 +2,8 @@ html, body {
   height: 100%;
   padding: 0;
   margin-top: -10px;
+  font-family: "Times New Roman", sans-serif;
+  font-size: 18px;
 }
 .wrapper {
   display: flex;
@@ -13,6 +15,42 @@ html, body {
 }
 .footer {
   flex: 0 0 auto;
+  text-align: center;
+}
+
+.questions {
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    width: 200px;
+    height: 40px;
+    background-color: rgba(255, 222, 103, 0.7);
+    border-top-left-radius: 30px;
+}
+
+.questions p {
+    position: relative;
+    text-align: center;
+}
+
+.questions span {
+    font-size: 24px;
+}
+
+a.OS {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+li {
+    margin: 10px;
+}
+
+h3 {
+    font-size: 40px;
+    color: #bd904d;
 }
 
 .zastavka img{
@@ -26,13 +64,27 @@ html, body {
     position: relative;
     text-align: center;
     font-size: 45px;
+    font-family: 'Berkshire Swash', cursive;
     color: whitesmoke;
 }
 
 .section1 {
     position: relative;
     padding: 50% 2% 0 2%;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+
+span.dropcaps {
+    color: #bd904d;
+    font-size: 3em;
+    float: left;
+    font-weight: bolder;
+    line-height: 1em;
+    margin-bottom: -0.4em;
+    margin-right: 0.09em;
+    position: relative;
 }
 
 .section2 {
@@ -41,7 +93,7 @@ html, body {
 }
 
 .fotorama {
-    padding: 0 15%;
+    padding: 2% 15%;
 }
 
 .section3 {
@@ -58,8 +110,8 @@ html, body {
     padding: 2% 2%;
 }
 
-.section4 li {
-    list-style-type: none;
+.section4 p {
+    font-size: 24px;
 }
 
 .sec4 {
@@ -72,6 +124,10 @@ html, body {
     font-size: 1.5em;
 }
 
+.section5 p {
+    font-family: 'Marck Script', cursive;
+}
+
 .section5 h2 {
     text-align: center;
     font-size: 3em;
@@ -81,6 +137,45 @@ html, body {
 img.about {
     float: left;
     padding: 0 2% 0 0;
+}
+
+.section6 {
+    position: relative;
+    padding: 2% 2%;
+}
+
+.section6 h3 {
+    font-size: 34px;
+}
+
+.section6 li {
+    list-style-type: none;
+}
+
+.included li {
+    padding-left: 20px;
+    position: relative;
+    margin: 10px;
+}
+
+.included li:before {
+    content: '✔';
+    position: absolute; top: 0; left: 0;
+    color: darkgreen;
+}
+
+.excluded li {
+    padding-left: 20px;
+    position: relative;
+    margin: 10px;
+}
+
+.excluded li:before {
+    content: 'x';
+    position: absolute; top: 0; left: 0;
+    font-weight: bold;
+    color: darkred;
+    margin-right: 10px;
 }
 
 /******************   SMOKE EFFECT   ******************/

@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+      <!-- Шрифты -->
+
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="{% static 'css/landing.css' %}" type="text/css">
@@ -37,13 +41,11 @@
     <div class="wrapper">
         <div class="wrapper-content">
             <div class="zastavka">
-                <img src="{% static 'img/Zastavka.jpg' %}">
-                <h1 class="start"><span>M</span><span>a</span><span>r</span><span>i</span><span>a</span>
-                    <span>&nbsp;</span><span>N</span><span>e</span><span>m</span><span>o</span><span>v</span><span>a</span>
-                    <span>&nbsp;</span><span>t</span><span>o</span><span>u</span><span>r</span><span>s</span></h1>
+                <img src="{% static 'img/Piramidi.jpg' %}">
+                <h1 class="start">Maria Nemova tours</h1>
             </div>
             <div class="section1">
-                <p>Каир, Египет – это настоящая буря Ближнего Востока, хранящая самые древние традиции, но стремящаяся
+                <p><span class="dropcaps">К</span>аир, Египет – это настоящая буря Ближнего Востока, хранящая самые древние традиции, но стремящаяся
                 к прогрессу и новому видению жизни. Здесь день за днем голос имама разлетается по песчаным улицам
                 и призывают к молитве, а девушки, чтящие традиции, всё чаще снимают платок, гуляют с подругами,
                 учатся в университетах и работают, защищая свою веру и семейную честь обретенным правом голоса.
@@ -134,11 +136,88 @@
                                 20 раз. И теперь я готова поделиться своим знанием об увиденном с теми, кто этого хочет. Если
                                 есть вопросы, обязательно пиши через кнопку обратной связи, либо в мой инстаграм-аккаунт. Всё
                                 расскажу, поясню, организую!<br>
-                                Ваша Маша»</p>
+                                Ваша Маша &#10084;»</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="section6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 sec4">
+                            <h3>Что входит в стоимость тура</h3>
+                            <ol class="included">
+                                <li>Проживание в отеле 7 дней, 6 ночей</li>
+                                <li>Трансфер (из/до аэропорта, из/до отеля на экскурсии)</li>
+                                <li>Страховка</li>
+                                <li>Экскурсионные билеты в музеи</li>
+                            </ol>
+                        </div>
+                        <div class="col-sm-6 sec4">
+                            <h3>Что не входит в стоимость тура</h3>
+                            <ul class="excluded">
+                                <li>Авиабилеты (оказываем помощь в оформлении)</li>
+                                <li>Виза в Египет (покупается по прилету в аэропорту)</li>
+                                <li>Расходы на еду, покупки, дополнительные расходы во время экскурсий</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>&#9993; eastfairytale.egypt@yandex.ru <a href="https://www.instagram.com/nemova_production" target="_blank">
+                            <img src="{% static 'img/instagram-icon.jpg' %}" height="30" width="30"></a></p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="text-muted">2018 &copy; Site designed by Alekhin Denis &#9993; a9265911319@yandex.ru</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a class="OS" href="#" data-toggle="modal" data-target="#myModal">
+            <div class="questions">
+                <p>Остались вопросы? <span>&#9993;</span></p>
+            </div>
+        </a>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Остались вопросы?</h4>
+              </div>
+                <form action="" method="post">{% csrf_token %}
+                  <div class="modal-body">
+                      <div class="form-group">
+                        <label>Имя: </label>
+                        <input type="text" name="{{ form.name.name }}" class="form-control" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <label>Номер телефона: </label>
+                        <input type="text" name="{{ form.phone_number.name }}" class="form-control" placeholder="Phone number">
+                      </div>
+                      <div class="form-group">
+                        <label>Email: </label>
+                        <input type="email" name="{{ form.email.name }}" class="form-control" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label>Вопрос: </label>
+                        <textarea rows="7" name="{{ form.description.name }}" class="form-control" placeholder="Description" required></textarea>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                  </div>
+                </form>
+            </div>
+          </div>
         </div>
     </div>
 
