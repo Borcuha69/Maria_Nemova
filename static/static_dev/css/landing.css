@@ -22,8 +22,8 @@ html, body {
     right: 0;
     bottom: 0;
     position: fixed;
-    width: 200px;
-    height: 40px;
+    width: 80px;
+    height: 50px;
     background-color: rgba(255, 222, 103, 0.7);
     border-top-left-radius: 30px;
 }
@@ -31,10 +31,7 @@ html, body {
 .questions p {
     position: relative;
     text-align: center;
-}
-
-.questions span {
-    font-size: 24px;
+    font-size: 40px;
 }
 
 a.OS {
@@ -60,9 +57,10 @@ h3 {
 
 .start {
     display: none;
-    margin-top: -50%;
-    position: relative;
+    position: absolute;
     text-align: center;
+    width: 100%;
+    top: 1rem;
     font-size: 45px;
     font-family: 'Berkshire Swash', cursive;
     color: whitesmoke;
@@ -70,8 +68,8 @@ h3 {
 
 .section1 {
     position: relative;
-    padding: 50% 2% 0 2%;
-    font-size: 2em;
+    padding: 2% 2%;
+    font-size: 1.2em;
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
 }
@@ -90,10 +88,6 @@ span.dropcaps {
 .section2 {
     position: relative;
     padding: 2% 2%;
-}
-
-.fotorama {
-    padding: 2% 15%;
 }
 
 .section3 {
@@ -121,7 +115,7 @@ span.dropcaps {
 .section5 {
     position: relative;
     padding: 2% 2%;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .section5 p {
@@ -137,6 +131,8 @@ span.dropcaps {
 img.about {
     float: left;
     padding: 0 2% 0 0;
+    width: 40%;
+    height: 40%;
 }
 
 .section6 {
@@ -176,6 +172,17 @@ img.about {
     font-weight: bold;
     color: darkred;
     margin-right: 10px;
+}
+
+.carousel img {
+    margin: 0 auto;
+    max-height: 600px;
+}
+
+.carousel {
+    max-height: 600px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /******************   SMOKE EFFECT   ******************/
