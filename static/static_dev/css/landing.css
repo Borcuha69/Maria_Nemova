@@ -16,6 +16,11 @@ html, body {
 .footer {
   flex: 0 0 auto;
   text-align: center;
+  background-color: #bd904d;
+}
+
+.footer-row {
+    padding-top: 10px;
 }
 
 .questions {
@@ -90,6 +95,22 @@ span.dropcaps {
     padding: 2% 2%;
 }
 
+.carousel img {
+    margin: 0 auto;
+    max-height: 600px;
+}
+
+.carousel {
+    max-height: 600px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.description ol {
+    background-image: url("../img/prozrachnaya-y.jpg");
+    background-size: cover;
+}
+
 .section3 {
     position: relative;
     padding: 2% 2%;
@@ -110,6 +131,20 @@ span.dropcaps {
 
 .sec4 {
     padding: 0 5% 0 5%;
+}
+
+.bed-img {
+    background-image: url("../img/61568082.jpg");
+    background-size: cover;
+    min-height: 310px;
+}
+
+.bed p {
+    padding: 50px 10px 0 10px;
+}
+
+.bed h3 {
+    text-align: center;
 }
 
 .section5 {
@@ -172,17 +207,6 @@ img.about {
     font-weight: bold;
     color: darkred;
     margin-right: 10px;
-}
-
-.carousel img {
-    margin: 0 auto;
-    max-height: 600px;
-}
-
-.carousel {
-    max-height: 600px;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 /******************   SMOKE EFFECT   ******************/
