@@ -1,0 +1,187 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", sans-serif;
+  font-size: 18px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.wrapper-content {
+  flex: 1 0 auto;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.footer {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+li {
+    margin: 10px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.section1, .section2, .section3, .section4, .section5, .section6, .section7 {
+    position: relative;
+    padding-top: 4%;
+    text-align: justify;
+    background-color: rgba(255, 222, 103, 0.2);
+}
+
+.part1, .part2 {
+    padding-top: 4%;
+}
+
+ul, ol {
+    padding-left: 10px;
+}
+
+.zastavka img{
+    position: relative;
+    width: 100%;
+}
+
+.section1 {
+    font-size: 1.2em;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+span.dropcaps {
+    color: #bd904d;
+    font-size: 3em;
+    float: left;
+    font-weight: bolder;
+    line-height: 1em;
+    margin-bottom: -0.4em;
+    margin-right: 0.09em;
+    position: relative;
+}
+
+.video {
+    text-align: center;
+    font-size: 80px;
+    padding-bottom: 4%;
+}
+
+.description {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.section3 ul {
+    background-image: url("../img/prozrachnaya-y.jpg");
+    background-size: cover;
+    font-size: 20px;
+}
+
+.section3 li {
+    list-style-type: none;
+}
+
+.section4 {
+    background-color: white;
+    padding-bottom: 8%;
+}
+
+.section4 p {
+    font-size: 26px;
+    padding: 2% 8%;
+}
+
+.bed-img {
+    max-width: 600px;
+    margin: 0 auto;
+    background-image: url("../img/61568082.jpg");
+    background-size: cover;
+}
+
+.section5 {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.section6 p {
+    font-family: 'Marck Script', cursive;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+img.about {
+    float: left;
+    padding: 0 2% 0 0;
+    width: 40%;
+    height: 40%;
+}
+
+.section7 ol {
+    padding-left: 20px;
+}
+
+.section7 li {
+    list-style-type: none;
+}
+
+.included li {
+    padding-left: 20px;
+    position: relative;
+    margin: 10px;
+}
+
+.included li:before {
+    content: '✔';
+    position: absolute; top: 0; left: 0;
+    color: darkgreen;
+}
+
+.excluded li {
+    padding-left: 20px;
+    position: relative;
+    margin: 10px;
+}
+
+.excluded li:before {
+    content: 'x';
+    position: absolute; top: 0; left: 0;
+    font-weight: bold;
+    color: darkred;
+}
+
+.questions {
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    width: 50px;
+    height: 40px;
+    background-color: rgba(255, 222, 103, 0.7);
+    border-top-left-radius: 20px;
+}
+
+.questions p {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+}
+
+a.OS {
+    text-decoration: none;
+    color: black;
+}
