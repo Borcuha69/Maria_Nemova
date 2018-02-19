@@ -13,11 +13,12 @@ html, body {
 .wrapper-content {
   flex: 1 0 auto;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 600px;
 }
 .footer {
   flex: 0 0 auto;
   text-align: center;
+    margin-top: 4%;
 }
 
 li {
@@ -42,10 +43,7 @@ h2 {
     padding-top: 4%;
     text-align: justify;
     background-color: rgba(255, 222, 103, 0.2);
-}
-
-.part1, .part2 {
-    padding-top: 4%;
+    margin-bottom: 8%;
 }
 
 ul, ol {
@@ -55,6 +53,14 @@ ul, ol {
 .zastavka img{
     position: relative;
     width: 100%;
+}
+
+.nemovaprod {
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 200px;
+    padding: 10px 25px;
+    margin-bottom: 4%;
 }
 
 .section1 {
@@ -99,16 +105,16 @@ span.dropcaps {
 
 .section4 {
     background-color: white;
-    padding-bottom: 8%;
+    padding-top: 0;
 }
 
 .section4 p {
-    font-size: 26px;
+    font-size: 24px;
     padding: 2% 8%;
 }
 
 .bed-img {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
     background-image: url("../img/61568082.jpg");
     background-size: cover;
@@ -132,8 +138,17 @@ img.about {
     height: 40%;
 }
 
+.section7 {
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+
 .section7 ol {
     padding-left: 20px;
+}
+
+.part1, .part2 {
+    padding-top: 4%;
 }
 
 .section7 li {
@@ -163,6 +178,20 @@ img.about {
     position: absolute; top: 0; left: 0;
     font-weight: bold;
     color: darkred;
+}
+
+.Nemova {
+    width: 300px;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-bottom: 4%;
+}
+
+.Alekhin {
+    border-top: 1px solid lightgrey;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 1%;
 }
 
 .questions {
