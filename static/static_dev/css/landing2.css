@@ -2,7 +2,7 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Times New Roman", sans-serif;
+  font-family: 'Gabriela', serif;
   font-size: 18px;
 }
 .wrapper {
@@ -30,7 +30,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 58px;
 }
 
 h2 {
@@ -38,9 +38,14 @@ h2 {
     padding-bottom: 15px;
 }
 
+h4 {
+
+}
+
 .section1, .section2, .section3, .section4, .section5, .section6, .section7 {
     position: relative;
     padding-top: 4%;
+    padding-bottom: 2%;
     text-align: justify;
     background-color: rgba(255, 222, 103, 0.2);
     margin-bottom: 8%;
@@ -50,17 +55,44 @@ ul, ol {
     padding-left: 10px;
 }
 
+.zastavka h3 {
+    font-size: 20px;
+}
+/***************** link style *****************/
+.zastavka a {
+    text-decoration: none;
+}
+
+.zastavka a:link {
+    color: #d88914;
+}
+
+.zastavka a:visited {
+    color: #d88914;
+}
+
+.zastavka a:hover {
+    color: #bd904d;
+}
+
+.zastavka a:active {
+    color: #d88914;
+}
+/***************** link style *****************/
 .zastavka img{
     position: relative;
     width: 100%;
 }
 
 .nemovaprod {
+    text-align: center;
     margin: 0 auto;
-    border: 1px solid black;
-    width: 200px;
-    padding: 10px 25px;
+    border: 2px solid black;
+    width: 285px;
+    padding: 5px 10px;
     margin-bottom: 4%;
+    font-size: 29px;
+    font-family: 'Fredericka the Great', cursive;
 }
 
 .section1 {
@@ -91,6 +123,10 @@ span.dropcaps {
 .description {
     padding-left: 2%;
     padding-right: 2%;
+}
+
+.section3 {
+    padding-bottom: 0;
 }
 
 .section3 ul {
@@ -139,7 +175,6 @@ img.about {
 }
 
 .section7 {
-    padding-bottom: 2%;
     margin-bottom: 2%;
 }
 
@@ -186,6 +221,28 @@ img.about {
     margin: 0 auto;
     margin-bottom: 4%;
 }
+
+/***************** link style *****************/
+.Nemova a {
+    text-decoration: none;
+}
+
+.Nemova a:link {
+    color: black;
+}
+
+.Nemova a:visited {
+    color: black;
+}
+
+.Nemova a:hover {
+    color: #9d1ce7;
+}
+
+.Nemova a:active {
+    color: black;
+}
+/***************** link style *****************/
 
 .Alekhin {
     border-top: 1px solid lightgrey;
